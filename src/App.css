@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "veener";
+  src: url("../public/font/Veneer.ttf");
+}
+body{
+  font-family: "veener";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(59, 56, 56);
+  background-image: url("../public//banner.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  background-image: url("../public/nav-bar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+.header a{
+  margin: 5px 40px;
+  padding: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header a img{
+  margin-left: 2px;
+}
+.home{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 50px;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+}
+.home-sub-text{
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+
+  
+}
+.home-sub-text h2{
+  font-size: 30px;
+  font-weight: 300px;
+} 
+.colored{
+  font-size: 60px;
+}
+.evil-text{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 5px;
+  padding: 2px;
+}
+.home-button{
+  margin-top: 10px;
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  padding: 20px 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.calender{
+display: flex;
+flex-direction: column;
+background-color: rgb(185, 21, 21);
+border-radius: 10px;
+padding: 5px;
+margin: 10px 20px;
+padding: 10px 10px;
+align-items: center;
+}
+.main-calender{
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
+#bottom-red{
+  background-color: rgb(185, 21, 21);
+  margin-top: 0px;
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 5px;
+
+}
+
+
+
+.RoadMap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: relative;
+  background-image: url("../public/road-map-bg.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
   min-height: 100vh;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+
+}
+
+.roadMapHeading{
+  color: whitesmoke;
+}
+.roadMapImg{
+  position: absolute;
+  bottom: 0;
+}
+.meetTheTeam{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 50px;
+  background-color: black;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+
+}
+.meetTheTeam h2{
+  color: whitesmoke;
+  
+}
+.team{
+  background-color: rgb(167, 161, 161);
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 50px;
+  
+
+}
+.teamMembers{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10x;
+  margin: 10px 20px;
+
+}
+.teamMembers h3, .teamMembers small,.teamMembers span {
+  color: black;
+}
+.FAQ{
+  background-image: url("../public/faq-bg.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px;
+  padding-right: 90px;
+
+}
+.faq-text{
+  color: whitesmoke;
+}
+.faq-text div{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 2px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+  padding: 10px;
+} 
+.images{
+  padding: 10px;
+  background-color: black;
+  padding: 50px;
+  
+
+}
+.images img{
+  margin: 10px 0px;
+  margin-left: 30px;
+}
+.navButton{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 10px;
+  padding: 20px 10px;
+  color: whitesmoke;
+  cursor: pointer;
+  
+
+}
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.footer-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+}
+.lastHeading{
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+.roadmapCircles{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.roadmapCircles div img{
+  
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.roadmapCircles div button{
+  background-color: rgb(185, 21, 21);
+  padding: 5px;
+  margin: 5px;
+  border: 0px;
+ border-radius: 5px;
+ color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
