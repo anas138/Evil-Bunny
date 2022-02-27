@@ -21,6 +21,7 @@ function App() {
         <a href="#team">TEAM</a>
         <a href="#faq">FAQ</a>
         <a><img src="insta.png"/><img src="twitter.png"/><FaDiscord size="2.5em" style={{padding:"5px",borderRadius:"50%",backgroundColor:"rgb(185, 21, 21)",marginLeft:"10px"}}/></a>
+        <button className="navButton">MINT EVIl APE</button>
       </div>
 
 
@@ -151,26 +152,26 @@ function App() {
         <h2>MEET THE TEAM</h2>
         <div className="team">
           <div className="teamMembers">
-            <img src="circle-team-1.png" height="100" width="100"/>
-            <h3>MOON WALKER</h3>
-            <span>CEO</span>
-            <small>Lorem ipsum dolor si amit</small>
+            <img src="circle-team-6.png" height="100" width="100"/>
+            <h3>The EVIL ONE</h3>
+            <span>Founder-The Evil One</span>
+            {/* <small>Lorem ipsum dolor si amit</small> */}
           </div>
 
 
           <div className="teamMembers">
             <img src="circle-team-2.png" height="100" width="100"/>
-            <h3>MICHO TOCHI</h3>
-            <span>ADVISOR</span>
-            <small>Lorem ipsum dolor si amit</small>
+            <h3>EVIL kinirvel</h3>
+            <span>Marketing\PR</span>
+            {/* <small>Lorem ipsum dolor si amit</small> */}
           </div>
 
 
           <div className="teamMembers">
             <img src="circle-team-3.png" height="100" width="100"/>
-            <h3>BOINK BOINK</h3>
-            <span>LORE MASTER</span>
-            <small>Lorem ipsum dolor si amit</small>
+            <h3>Pirate</h3>
+            <span>Artist</span>
+            {/* <small>Lorem ipsum dolor si amit</small> */}
           </div>
 
 
@@ -184,18 +185,13 @@ function App() {
 
           <div className="teamMembers">
             <img src="circle-team-5.png" height="100" width="100"/>
-            <h3>MICHO TOCHI</h3>
-            <span>ADVISOR</span>
-            <small>Lorem ipsum dolor si amit</small>
+            <h3>ABash</h3>
+            <span>Dev \ Web 3 Expert</span>
+            {/* <small>Lorem ipsum dolor si amit</small> */}
           </div>
 
 
-          <div className="teamMembers">
-            <img src="circle-team-6.png" height="100" width="100"/>
-            <h3>BOINK BOINK</h3>
-            <span>LORE MASTER</span>
-            <small>Lorem ipsum dolor si amit</small>
-          </div>
+         
         </div>
       </div>
 
