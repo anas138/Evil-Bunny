@@ -41,7 +41,7 @@ body{
   text-decoration: none;
 }
 .header a img{
-  margin-left: 2px;
+  margin-left: 10px;
 }
 .home{
   display: flex;
@@ -195,14 +195,17 @@ align-items: center;
   padding: 10px;
 } 
 .images{
-  padding: 10px;
+  
   background-color: black;
   padding: 50px;
   
+  
+  
 
 }
+
 .images img{
-  margin: 10px 0px;
+  
   margin-left: 30px;
 }
 .navButton{

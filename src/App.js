@@ -3,6 +3,7 @@ import './App.css';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 function App() {
+  const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png"]
   return (
     
     <div className="App">
@@ -53,15 +54,10 @@ function App() {
       <ResponsiveMasonry
       columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}}
       >
-        <Masonry>
-      <img src="a.png" height="250" width="250"/>
-      <img src="b.png" height="250" width="250"/>
-      <img src="c.png" height="250" width="250"/>
-      <img src="d.png" height="250" width="250"/>
-      <img src="e.png" height="250" width="250"/>
-      <img src="f.png" height="250" width="250"/>
-      <img src="g.png" height="250" width="250"/>
-      <img src="h.png" height="250" width="250"/>
+        <Masonry gutter={10}>
+          {images.map((img,i)=>{
+            return <img src={img} key={i}/>
+          })}
       </Masonry>
       </ResponsiveMasonry>
     </div>
