@@ -9,7 +9,7 @@ function App() {
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png","bunny.png","bunn2.png"]
   useEffect(()=>{
     AOS.init();
-  },[])
+  })
   return (
     
     <div className="App">
@@ -102,10 +102,11 @@ function App() {
         </div> */}
 
 
-
+<div className="line" style={{borderLeft:"5px solid rgb(185, 21, 21)"}}></div>
 
         <div   
       className="roadmApText" style={{color:"white"}} data-aos="fade-up" >
+        
         <div  data-aos="fade-up" 
      data-aos-duration="3000">15% Marketing we will begin launching additional marketing with influencers <br/>
           that are relevant and significant in the NFT space to get more eyes than ever <br/>

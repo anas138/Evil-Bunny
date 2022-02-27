@@ -319,3 +319,10 @@ align-items: center;
   background-color: black;
    
 }
+.line{
+  position: absolute;
+  left:25%;
+  top: 15%;
+  height: 110vh;
+
+}
