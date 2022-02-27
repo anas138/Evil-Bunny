@@ -58,12 +58,20 @@ function App() {
 
     <div className="images">
       <ResponsiveMasonry
-      columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}}
+      columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
       >
         <Masonry gutter={10}>
-          {images.map((img,i)=>{
+          <img src="a.png" />
+          <img src="b.png"  />
+          <img src="c.png"  />
+          <img src="d.png"  />
+          <img src="e.png" />
+          <img src="f.png" />
+          <img src="g.png"  />
+          <img src="h.png" />
+          {/* {images.map((img,i)=>{
             return <img src={img} key={i}/>
-          })}
+          })} */}
       </Masonry>
       </ResponsiveMasonry>
     </div>
