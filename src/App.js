@@ -1,10 +1,15 @@
-import React from "react"
+import React,{useEffect} from "react"
 import './App.css';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import { FaDiscord } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function App() {
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png"]
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     
     <div className="App">
@@ -83,41 +88,49 @@ function App() {
 
 
 
-        <div className="roadmApText" style={{color:"white"}}>
-        <div>15% Marketing we will begin launching additional marketing with influencers <br/>
+        <div  data-aos="fade-up"
+     data-aos-duration="1000" className="roadmApText" style={{color:"white"}}>
+        <div  data-aos="fade-up"
+     data-aos-duration="3000">15% Marketing we will begin launching additional marketing with influencers <br/>
           that are relevant and significant in the NFT space to get more eyes than ever <br/>
           on our project   during and after our public sale.</div>
          <br/>
          <br/>
-        <div>25% We will begin to distribute 5 ETH right back into the community among <br/>
+        <div  data-aos="fade-up"
+     data-aos-duration="3000">25% We will begin to distribute 5 ETH right back into the community among <br/>
           random Evil Ape Club NFT holders.</div>
         <br/>
         
-        <div>50% Acquire land in the Sandbox to establish our presence in the Metaverse.<br/>
+        <div  data-aos="fade-up"
+     data-aos-duration="3000">50% Acquire land in the Sandbox to establish our presence in the Metaverse.<br/>
            We believe as the meta verse grows everyone need a place to call their own. <br/>
            We will acquire land and build a unique meeting place exclusive to Evil Ape  <br/>
             Club holders where we will host virtual community gatherings, holiday parties, <br/>
             contest and more.</div>
         <br/>
         <br/>
-       <div> 60% 50 ETH goes directly into our community wallet, this will be used for<br/> 
+       <div  data-aos="fade-up"
+     data-aos-duration="3000"> 60% 50 ETH goes directly into our community wallet, this will be used for<br/> 
          Marketing,  Merch development, and this will be used in our community DAO, <br/>
          where holders will be able to vote on community decisions as we ascend into <br/>
          the Metaverse</div>
        <br/>
        <br/>
-       <div> 70% We are going to be doing Limited edition Merch for now this includes <br/>
+       <div  data-aos="fade-up"
+     data-aos-duration="3000"> 70% We are going to be doing Limited edition Merch for now this includes <br/>
          stylish T-Shirts, hoodies, and more. Designs will be limited to create <br/>
          exclusivity. Merch drops will be in limited supply</div>
        <br/>
        <br/>
-       <div>   80%  We will begin launching our staking contract that allows EAC <br/>
+       <div  data-aos="fade-up"
+     data-aos-duration="3000">   80%  We will begin launching our staking contract that allows EAC <br/>
          holders to earn $EVIL Coins, which can be used to purchase the following:<br/> 
          NFTs, Whitelist to upcoming projects, Limited edition Metaverse wearables, <br/>
          Limited edition Evil Ape Club Merch,  Vacations, Gift cards, ETH and more.</div>
        <br/>
        <br/>
-       <div>100% Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br/>
+       <div  data-aos="fade-up"
+     data-aos-duration="3000">100% Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br/>
          roadmap v2.0…Stay Tuned…Stay evil !</div>
         </div>
 
