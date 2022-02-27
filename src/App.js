@@ -6,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function App() {
-  const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png"]
+  const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png","bunny.png","bunn2.png"]
   useEffect(()=>{
     AOS.init();
   },[])
@@ -59,7 +59,7 @@ function App() {
 
     <div className="images">
       <ResponsiveMasonry
-      columnsCountBreakPoints={{350: 1, 750: 3, 900: 5}}
+      columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
       >
         <Masonry gutter={10}>
           <img src="a.png" height="400" width="400"/>
@@ -70,6 +70,9 @@ function App() {
           <img src="f.png" height="400" width="400"/>
           <img src="g.png"   height="400" width="400"/>
           <img src="h.png" height="400" width="400"/>
+          <img src="bunny.png" height="400" width="400" style={{borderRadius:"10px"}}/>
+          <img src="bunn2.png" height="400" width="400" style={{borderRadius:"10px"}}/>
+
           {/* {images.map((img,i)=>{
             return <img src={img} key={i}/>
           })} */}
@@ -151,18 +154,20 @@ function App() {
       <div className="meetTheTeam" id="team">
         <h2>MEET THE TEAM</h2>
         <div className="team">
-          <div className="teamMembers">
-            <img src="circle-team-6.png" height="100" width="100"/>
-            <h3>The EVIL ONE</h3>
-            <span>Founder-The Evil One</span>
-            {/* <small>Lorem ipsum dolor si amit</small> */}
-          </div>
+          
 
 
           <div className="teamMembers">
             <img src="circle-team-2.png" height="100" width="100"/>
             <h3>EVIL kinirvel</h3>
             <span>Marketing\PR</span>
+            {/* <small>Lorem ipsum dolor si amit</small> */}
+          </div>
+          
+          <div className="teamMembers">
+            <img src="circle-team-6.png" height="100" width="100"/>
+            <h3>The EVIL ONE</h3>
+            <span>Founder-The Evil One</span>
             {/* <small>Lorem ipsum dolor si amit</small> */}
           </div>
 
@@ -175,13 +180,7 @@ function App() {
           </div>
 
 
-          <div className="teamMembers">
-            <img src="circle-team-4.png" height="100" width="100"/>
-            <h3>MOON WALKER</h3>
-            <span>CEO</span>
-            <small>Lorem ipsum dolor si amit</small>
-          </div>
-
+          
 
           <div className="teamMembers">
             <img src="circle-team-5.png" height="100" width="100"/>
