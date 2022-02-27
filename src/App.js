@@ -66,7 +66,7 @@ function App() {
 
     <div className="RoadMap" id="roadMap">
         <h1 className="roadMapHeading">Road Map</h1>
-        <div className="roadmapCircles">
+        {/* <div className="roadmapCircles">
         <span style={{color:"white",marginRight:"5px"}}>ORIGINAL<br/> ROADMAP</span>
           <div>
           <img src="map-circle.png" height="150x" width="150px"/><br/>
@@ -78,7 +78,50 @@ function App() {
           <button>Download</button>
           </div>
           <span style={{color:"white",marginLeft:"5px"}}> ROADMAP FOR HE NEW<br/> EA [EVIL APP]!</span>
+        </div> */}
+
+
+
+
+        <div className="roadmApText" style={{color:"white"}}>
+        <div>15% Marketing we will begin launching additional marketing with influencers <br/>
+          that are relevant and significant in the NFT space to get more eyes than ever <br/>
+          on our project   during and after our public sale.</div>
+         <br/>
+         <br/>
+        <div>25% We will begin to distribute 5 ETH right back into the community among <br/>
+          random Evil Ape Club NFT holders.</div>
+        <br/>
+        
+        <div>50% Acquire land in the Sandbox to establish our presence in the Metaverse.<br/>
+           We believe as the meta verse grows everyone need a place to call their own. <br/>
+           We will acquire land and build a unique meeting place exclusive to Evil Ape  <br/>
+            Club holders where we will host virtual community gatherings, holiday parties, <br/>
+            contest and more.</div>
+        <br/>
+        <br/>
+       <div> 60% 50 ETH goes directly into our community wallet, this will be used for<br/> 
+         Marketing,  Merch development, and this will be used in our community DAO, <br/>
+         where holders will be able to vote on community decisions as we ascend into <br/>
+         the Metaverse</div>
+       <br/>
+       <br/>
+       <div> 70% We are going to be doing Limited edition Merch for now this includes <br/>
+         stylish T-Shirts, hoodies, and more. Designs will be limited to create <br/>
+         exclusivity. Merch drops will be in limited supply</div>
+       <br/>
+       <br/>
+       <div>   80%  We will begin launching our staking contract that allows EAC <br/>
+         holders to earn $EVIL Coins, which can be used to purchase the following:<br/> 
+         NFTs, Whitelist to upcoming projects, Limited edition Metaverse wearables, <br/>
+         Limited edition Evil Ape Club Merch,  Vacations, Gift cards, ETH and more.</div>
+       <br/>
+       <br/>
+       <div>100% Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br/>
+         roadmap v2.0…Stay Tuned…Stay evil !</div>
         </div>
+
+
          <img src="road-map-chracters.png" height="200" width="400" className="roadMapImg"/>
       </div>
 
