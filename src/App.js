@@ -1,6 +1,7 @@
 import React from "react"
 import './App.css';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import { FaDiscord } from "react-icons/fa";
 
 function App() {
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png"]
@@ -14,8 +15,7 @@ function App() {
         <a href="#roadMap">ROAD MAP</a>
         <a href="#team">TEAM</a>
         <a href="#faq">FAQ</a>
-        <a><img src="insta.png"/><img src="twitter.png"/></a>
-        <a><button className="navButton">JOIN OUR DISCORD</button></a>
+        <a><img src="insta.png"/><img src="twitter.png"/><FaDiscord size="2.5em" style={{padding:"5px",borderRadius:"50%",backgroundColor:"rgb(185, 21, 21)",marginLeft:"10px"}}/></a>
       </div>
 
 
@@ -46,6 +46,7 @@ function App() {
           </div>
           <button className="home-button">MINT EVIL APE</button>
           </div>
+          <div className="sideHeading"></div>
       </div>
     </div>
 
