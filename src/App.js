@@ -21,7 +21,7 @@ function App() {
         <a href="#team">TEAM</a>
         <a href="#faq">FAQ</a>
         <a><img src="insta.png"/><img src="twitter.png"/><FaDiscord size="2.5em" style={{padding:"5px",borderRadius:"50%",backgroundColor:"rgb(185, 21, 21)",marginLeft:"10px"}}/></a>
-        <button className="navButton">MINT EVIl APE</button>
+        <button  style={{fontWeight:"bold",fontSize:"18px"}}className="navButton">MINT EVIl APE</button>
       </div>
 
 
@@ -56,28 +56,32 @@ function App() {
       </div>
     </div>
 
-
+   <div className="imagesWraper">
     <div className="images">
       <ResponsiveMasonry
       columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
+      rowCountBreakPoints={{350: 1, 750: 3, 900: 3}}
       >
         <Masonry gutter={10}>
-          <img src="a.png" height="400" width="400"/>
-          <img src="b.png" height="400" width="400" />
-          <img src="c.png"  height="400" width="400"/>
-          <img src="d.png"  height="400" width="400"/>
-          <img src="e.png"  height="400" width="400"/>
-          <img src="f.png" height="400" width="400"/>
-          <img src="g.png"   height="400" width="400"/>
-          <img src="h.png" height="400" width="400"/>
-          <img src="bunny.png" height="400" width="400" style={{borderRadius:"10px"}}/>
-          <img src="bunn2.png" height="400" width="400" style={{borderRadius:"10px"}}/>
-
+          
+          <img src="a.png" height="50" width="50" style={{borderRadius:"10px"}}/>
+          <img src="b.png" height="50" width="50"  style={{borderRadius:"10px"}}/>
+          <img src="c.png"  height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
+          <img src="d.png"  height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
+          <img src="e.png"  height="50" width="50" style={{borderRadius:"10px"}}/>
+          <img src="f.png" height="50" width="50" style={{borderRadius:"10px"}}/>
+          <img src="g.png"   height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
+          <img src="h.png" height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
+          <img src="bunny.png" height="50" width="50" style={{borderRadius:"10px"}}/>
+          <img src="bunn2.png" height="50" width="50" style={{borderRadius:"10px"}}/>
+          
           {/* {images.map((img,i)=>{
-            return <img src={img} key={i}/>
+            return <img src={img} key={i} style={{borderRadius:"10px"}}/>
           })} */}
+          
       </Masonry>
       </ResponsiveMasonry>
+    </div>
     </div>
     
 
@@ -100,9 +104,9 @@ function App() {
 
 
 
-        <div  data-aos="fade-up"
-     data-aos-duration="1000" className="roadmApText" style={{color:"white"}}>
-        <div  data-aos="fade-up"
+        <div   
+      className="roadmApText" style={{color:"white"}} data-aos="fade-up" >
+        <div  data-aos="fade-up" 
      data-aos-duration="3000">15% Marketing we will begin launching additional marketing with influencers <br/>
           that are relevant and significant in the NFT space to get more eyes than ever <br/>
           on our project   during and after our public sale.</div>
