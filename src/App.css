@@ -1,16 +1,20 @@
 @font-face {
   font-family: "veener";
   src: url("../public/font/Veneer.ttf");
+  
+  
 }
 body{
   font-family: "veener";
+  
+  
 }
 
 
 .wrapper{
   display: flex;
   flex-direction: column;
-  background-color: rgb(59, 56, 56);
+  
   background-image: url("../public//banner.jpg");
   background-position:center;
   background-repeat: no-repeat;
@@ -22,6 +26,7 @@ body{
 }
 
 .header{
+  font-family: "veener";
   background-image: url("../public/nav-bar.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -34,8 +39,8 @@ body{
   padding: 5px;
   border-radius: 5px;
   width: 1000px;
-  opacity: 0.6;
-  background-color: rgba(255,255,255,.2)!important;
+  
+  
   
 }
 .header a{
