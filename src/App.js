@@ -59,15 +59,15 @@ function App() {
    <div className="imagesWraper">
     <div className="images">
     <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 6}}
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 5}}
             >
           <Masonry>
           <img src="a.png"  style={{borderRadius:"10px"}}/>
           <img src="b.png"   style={{borderRadius:"10px"}}/>
           <img src="c.png"   style={{borderRadius:"10px"}}/>
           <img src="d.png"   style={{borderRadius:"10px"}}/>
-          <img src="e.png"   style={{borderRadius:"10px" ,width:"200px"}}/>
-          <img src="f.png"    style={{borderRadius:"10px",width:"200px"}}/>
+          <img src="e.png"   style={{borderRadius:"10px" }}/>
+          <img src="f.png"    style={{borderRadius:"10px"}}/>
           <img src="g.png"    style={{borderRadius:"10px"}}/>
           <img src="h.png"    style={{borderRadius:"10px"}}/>
           <img src="bunny.png"  style={{borderRadius:"10px"}}/>
