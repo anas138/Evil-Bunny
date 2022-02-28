@@ -1,4 +1,4 @@
-import React,{useEffect} from "react"
+import React,{useEffect,useState} from "react"
 import './App.css';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import { FaDiscord } from "react-icons/fa";
@@ -6,10 +6,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function App() {
+  const [answer,setAnswer] = useState(false)
+  const[index,setIndex] = useState()
   const images=["a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png","bunny.png","bunn2.png"]
   useEffect(()=>{
     AOS.init();
   })
+  const questiClick=(number)=>{
+    setAnswer(!answer)
+    setIndex(number)
+  }
   return (
     
     <div className="App">
@@ -151,7 +157,7 @@ function App() {
         </div>
 
 
-         <img src="road-map-chracters.png" height="200" width="400" className="roadMapImg"/>
+         <img src="road-map-chracters.png" height="200" width="550" className="roadMapImg"/>
       </div>
 
 
@@ -204,12 +210,26 @@ function App() {
         </div>
         <div className="faq-text">
            <h1>FAQ</h1>
-           <div>WHAT IS THE EVIL APE</div>
-           <div>WHEN WILL I BE ABLE TO MINT AEVIL APE?</div>
+           
+           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL<br/>  APE CLUB COLLECTION?</div>
+           <div className={`${(answer==true && index==1)?'':"anewers"}`} >A : THERE ARE 6969 UNIQUE EVIL APES</div>
+
+           <div onClick={()=>{questiClick(2)}}>Q : HOW MUCH IS IT TO MINT?</div>
+           <div className={`${(answer==true && index==2)?'':"anewers"}`}>A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.65 ETH PUBLIC SALE IS 0.7 ETH</div>
+
            <div id="bottom-red">12/02/2022 7pm EST</div>
-           <div>HOW MUCH WILL EACH EVIL APP COST TO MINT?</div>
-           <div>WHAT IS THE EVIL APE</div>
-           <div>WHEN WILL I BE ABLE TO MINT AEVIL APE?</div>
+
+           <div onClick={()=>{questiClick(3)}}>Q : HOW MUCH WILL EACH EVIL APP COST TO MINT?</div>
+           <div className={`${(answer==true && index==3)?'':"anewers"}`}> A : Our Whitelist presale mint starts <br/> March 12, 2022 at 12:00 noon EST and last <br/>for 24 hours. Our public sale <br/>starts the following<br/> day March 13, 2022 at 12:00 noon EST.</div>
+
+           <div onClick={()=>{questiClick(4)}}>Q : Where can I view my Evil Ape Club NFT?</div>
+           <div  className={`${(answer==true && index==4)?'':"anewers"}`}>A : After a successful mint, <br/>you can view your Rebel Tiger on OpenSea.<br/> by connecting your wallet.</div>
+
+           <div onClick={()=>{questiClick(5)}}>Q : Where can I view my Evil Ape Club NFT?</div>
+           <div className={`${(answer==true && index==5)?'':"anewers"}`}>A : WHAT IS THE EVIL APE</div>
+
+           <div onClick={()=>{questiClick(6)}}>Q : What Blockchain?</div>
+           <div className={`${(answer==true && index==6)?'':"anewers"}`}>A : ETH Blockchain</div>
         </div>
       </div>
       <div className="footer">
