@@ -4,6 +4,7 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import { FaDiscord } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { height } from "@mui/system";
 
 function App() {
   const [answer,setAnswer] = useState(false)
@@ -64,22 +65,18 @@ function App() {
 
    <div className="imagesWraper">
     <div className="images">
-    <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 5}}
-            >
-          <Masonry>
-          <img src="a.png"  style={{borderRadius:"10px"}}/>
-          <img src="b.png"   style={{borderRadius:"10px"}}/>
-          <img src="c.png"   style={{borderRadius:"10px"}}/>
-          <img src="d.png"   style={{borderRadius:"10px"}}/>
-          <img src="e.png"   style={{borderRadius:"10px" }}/>
-          <img src="f.png"    style={{borderRadius:"10px"}}/>
-          <img src="g.png"    style={{borderRadius:"10px"}}/>
-          <img src="h.png"    style={{borderRadius:"10px"}}/>
-          <img src="bunny.png"  style={{borderRadius:"10px"}}/>
-          <img src="bunn2.png"  style={{borderRadius:"10px"}}/>
-          </Masonry>
-          </ResponsiveMasonry>
+    
+          <img src="a.png"  style={{borderRadius:"10px", height:"200px" ,width:"300px",bottom:"100px"}}/>
+          <img src="b.png"   style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
+          <img src="c.png"   style={{borderRadius:"10px" , height:"300px" ,width:"280px"}}/>
+          <img src="d.png"   style={{borderRadius:"10px" , height:"300px" ,width:"280px"}}/>
+          <img src="e.png"   style={{borderRadius:"10px"  , height:"300px" ,width:"282px",bottom:"100px"}}/>
+          <img src="f.png"    style={{borderRadius:"10px" , height:"300px" ,width:"282px",bottom:"100px"}}/>
+          <img src="g.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
+          <img src="h.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
+          <img src="bunny.png"  style={{borderRadius:"10px" , height:"300px" ,width:"500px",bottom:"100px"}}/>
+          <img src="bunn2.png"  style={{borderRadius:"10px" , height:"300px" ,width:"500px",bottom:"100px"}}/>
+          
           
           {/* {images.map((img,i)=>{
             return <img src={img} key={i} style={{borderRadius:"10px"}}/>

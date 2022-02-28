@@ -42,7 +42,7 @@ body{
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  
+  opacity: 0.8;
 }
 .header a img{
   margin-left: 5px;
@@ -208,12 +208,13 @@ align-items: center;
 .images{
   background-color: black;
   padding: 50px;
+  position: relative;
 }
 
 .images img {
   margin: 10px;
-  height: 100%;
-  width: 90%;
+  position: relative;
+  
 
 }
 .navButton{
