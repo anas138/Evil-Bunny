@@ -66,8 +66,8 @@ function App() {
           <img src="b.png"   style={{borderRadius:"10px"}}/>
           <img src="c.png"   style={{borderRadius:"10px"}}/>
           <img src="d.png"   style={{borderRadius:"10px"}}/>
-          <img src="e.png"   style={{borderRadius:"10px"}}/>
-          <img src="f.png"    style={{borderRadius:"10px"}}/>
+          <img src="e.png"   style={{borderRadius:"10px" ,width:"200px"}}/>
+          <img src="f.png"    style={{borderRadius:"10px",width:"200px"}}/>
           <img src="g.png"    style={{borderRadius:"10px"}}/>
           <img src="h.png"    style={{borderRadius:"10px"}}/>
           <img src="bunny.png"  style={{borderRadius:"10px"}}/>
