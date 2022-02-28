@@ -15,12 +15,12 @@ function App() {
     <div className="App">
       <div className="wrapper"> 
       <div className="header" height="100" width="100">
-        <img src="logo.png"/>
+        <img src="logo.png" className="headerlogo"/>
         <a href="#home">HOME</a>
         <a href="#roadMap">ROAD MAP</a>
         <a href="#team">TEAM</a>
         <a href="#faq">FAQ</a>
-        <a><img src="insta.png"/><img src="twitter.png"/><FaDiscord size="2.5em" style={{padding:"5px",borderRadius:"50%",backgroundColor:"rgb(185, 21, 21)",marginLeft:"10px"}}/></a>
+        <a id="headImg"><img src="insta.png"/><img src="twitter.png"/><FaDiscord size="2.5em" style={{padding:"5px",borderRadius:"50%",backgroundColor:"rgb(185, 21, 21)",marginLeft:"5px"}}/></a>
         <button  style={{fontWeight:"bold",fontSize:"18px"}}className="navButton">MINT EVIl APE</button>
       </div>
 
@@ -58,29 +58,28 @@ function App() {
 
    <div className="imagesWraper">
     <div className="images">
-      <ResponsiveMasonry
-      columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
-      rowCountBreakPoints={{350: 1, 750: 3, 900: 3}}
-      >
-        <Masonry gutter={10}>
-          
-          <img src="a.png" height="50" width="50" style={{borderRadius:"10px"}}/>
-          <img src="b.png" height="50" width="50"  style={{borderRadius:"10px"}}/>
-          <img src="c.png"  height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
-          <img src="d.png"  height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
-          <img src="e.png"  height="50" width="50" style={{borderRadius:"10px"}}/>
-          <img src="f.png" height="50" width="50" style={{borderRadius:"10px"}}/>
-          <img src="g.png"   height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
-          <img src="h.png" height="50" width="50" style={{borderRadius:"10px",marginTop:"30px"}}/>
-          <img src="bunny.png" height="50" width="50" style={{borderRadius:"10px"}}/>
-          <img src="bunn2.png" height="50" width="50" style={{borderRadius:"10px"}}/>
+    <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 5}}
+            >
+          <Masonry>
+          <img src="a.png"  style={{borderRadius:"10px"}}/>
+          <img src="b.png"   style={{borderRadius:"10px"}}/>
+          <img src="c.png"   style={{borderRadius:"10px"}}/>
+          <img src="d.png"   style={{borderRadius:"10px"}}/>
+          <img src="e.png"   style={{borderRadius:"10px"}}/>
+          <img src="f.png"    style={{borderRadius:"10px"}}/>
+          <img src="g.png"    style={{borderRadius:"10px"}}/>
+          <img src="h.png"    style={{borderRadius:"10px"}}/>
+          <img src="bunny.png"  style={{borderRadius:"10px"}}/>
+          <img src="bunn2.png"  style={{borderRadius:"10px"}}/>
+          </Masonry>
+          </ResponsiveMasonry>
           
           {/* {images.map((img,i)=>{
             return <img src={img} key={i} style={{borderRadius:"10px"}}/>
           })} */}
           
-      </Masonry>
-      </ResponsiveMasonry>
+      
     </div>
     </div>
     
@@ -108,18 +107,18 @@ function App() {
       className="roadmApText" style={{color:"white"}} data-aos="fade-up" >
         
         <div  data-aos="fade-up" 
-     data-aos-duration="3000">15% Marketing we will begin launching additional marketing with influencers <br/>
+     data-aos-duration="3000"><span id="number">15% </span>Marketing we will begin launching additional marketing with influencers <br/>
           that are relevant and significant in the NFT space to get more eyes than ever <br/>
-          on our project   during and after our public sale.</div>
+          on our projectduring and after our public sale.</div>
          <br/>
          <br/>
         <div  data-aos="fade-up"
-     data-aos-duration="3000">25% We will begin to distribute 5 ETH right back into the community among <br/>
+     data-aos-duration="3000"><span id="number">25% </span>We will begin to distribute 5 ETH right back into the community among <br/>
           random Evil Ape Club NFT holders.</div>
         <br/>
         
         <div  data-aos="fade-up"
-     data-aos-duration="3000">50% Acquire land in the Sandbox to establish our presence in the Metaverse.<br/>
+     data-aos-duration="3000"> <span id="number">50%</span> Acquire land in the Sandbox to establish our presence in the Metaverse.<br/>
            We believe as the meta verse grows everyone need a place to call their own. <br/>
            We will acquire land and build a unique meeting place exclusive to Evil Ape  <br/>
             Club holders where we will host virtual community gatherings, holiday parties, <br/>
@@ -127,27 +126,27 @@ function App() {
         <br/>
         <br/>
        <div  data-aos="fade-up"
-     data-aos-duration="3000"> 60% 50 ETH goes directly into our community wallet, this will be used for<br/> 
+     data-aos-duration="3000"> <span id="number">60%</span> 50 ETH goes directly into our community wallet, this will be used for<br/> 
          Marketing,  Merch development, and this will be used in our community DAO, <br/>
          where holders will be able to vote on community decisions as we ascend into <br/>
          the Metaverse</div>
        <br/>
        <br/>
        <div  data-aos="fade-up"
-     data-aos-duration="3000"> 70% We are going to be doing Limited edition Merch for now this includes <br/>
+     data-aos-duration="3000"> <span id="number">70%</span> We are going to be doing Limited edition Merch for now this includes <br/>
          stylish T-Shirts, hoodies, and more. Designs will be limited to create <br/>
          exclusivity. Merch drops will be in limited supply</div>
        <br/>
        <br/>
        <div  data-aos="fade-up"
-     data-aos-duration="3000">   80%  We will begin launching our staking contract that allows EAC <br/>
+     data-aos-duration="3000"><span id="number">80% </span> We will begin launching our staking contract that allows EAC <br/>
          holders to earn $EVIL Coins, which can be used to purchase the following:<br/> 
          NFTs, Whitelist to upcoming projects, Limited edition Metaverse wearables, <br/>
          Limited edition Evil Ape Club Merch,  Vacations, Gift cards, ETH and more.</div>
        <br/>
        <br/>
        <div  data-aos="fade-up"
-     data-aos-duration="3000">100% Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br/>
+     data-aos-duration="3000"><span id="number">100%</span> Roadmap v2.0 - At the completion of roadmap v1.5 we will unveil <br/>
          roadmap v2.0…Stay Tuned…Stay evil !</div>
         </div>
 
@@ -163,14 +162,14 @@ function App() {
 
 
           <div className="teamMembers">
-            <img src="circle-team-2.png" height="100" width="100"/>
+            <img src="circle-team-2.png" height="200" width="200"/>
             <h3>EVIL kinirvel</h3>
             <span>Marketing\PR</span>
             {/* <small>Lorem ipsum dolor si amit</small> */}
           </div>
           
           <div className="teamMembers">
-            <img src="circle-team-6.png" height="100" width="100"/>
+            <img src="circle-team-6.png" height="200" width="200"/>
             <h3>The EVIL ONE</h3>
             <span>Founder-The Evil One</span>
             {/* <small>Lorem ipsum dolor si amit</small> */}
@@ -178,7 +177,7 @@ function App() {
 
 
           <div className="teamMembers">
-            <img src="circle-team-3.png" height="100" width="100"/>
+            <img src="circle-team-3.png" height="200" width="200"/>
             <h3>Pirate</h3>
             <span>Artist</span>
             {/* <small>Lorem ipsum dolor si amit</small> */}
@@ -188,7 +187,7 @@ function App() {
           
 
           <div className="teamMembers">
-            <img src="circle-team-5.png" height="100" width="100"/>
+            <img src="circle-team-5.png" height="200" width="200"/>
             <h3>ABash</h3>
             <span>Dev \ Web 3 Expert</span>
             {/* <small>Lorem ipsum dolor si amit</small> */}

@@ -36,15 +36,22 @@ body{
   
 }
 .header a{
-  margin: 5px 40px;
+  margin: 5px 20px;
   padding: 5px;
   color: whitesmoke;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  
 }
 .header a img{
-  margin-left: 10px;
+  margin-left: 5px;
 }
+.headerlogo{
+  width: 150px;
+  margin-right: 30px;
+}
+
 .home{
   display: flex;
   align-items: center;
@@ -150,12 +157,13 @@ align-items: center;
   
 }
 .team{
-  background-color: rgb(167, 161, 161);
+  background-color: whitesmoke;
   padding: 20px;
   border-radius: 10px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 50px;
+  
   
 
 }
@@ -199,8 +207,12 @@ align-items: center;
 .images{
   background-color: black;
   padding: 50px;
-  width: 700px;
-  margin-left: 22%;
+  
+  
+  
+  
+  
+  
   
  
   
@@ -209,8 +221,8 @@ align-items: center;
 
 .images img {
   margin: 10px;
-  width: 60%;
-  height: 35%;
+  height: 200px;
+  width: 200px;
 
 }
 .navButton{
@@ -270,7 +282,7 @@ align-items: center;
  color: whitesmoke;
 }
 .sideHeading{
-  margin-left:650px;
+  margin-left:600px;
 }
 .roadmApText{
   display: flex;
@@ -306,7 +318,7 @@ align-items: center;
     text-decoration: none;
   }
   .images{
-    margin-left: 5%;
+    text-align: center;
     
    
     
@@ -325,4 +337,28 @@ align-items: center;
   top: 15%;
   height: 110vh;
 
+}
+@media screen and (max-width: 800px) {
+  .header{
+    display: flex;
+    
+  }
+  .header a{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .header a img{
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    
+  }
+  .teamMembers img{
+     height: 50px;
+     width: 70px;
+  }
+}
+#number{
+  color: rgb(185, 21, 21);
 }
