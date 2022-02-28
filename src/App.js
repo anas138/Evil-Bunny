@@ -209,7 +209,7 @@ function App() {
            <h1>FAQ</h1>
            
            <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL<br/>  APE CLUB COLLECTION? <FaSortDown/> </div>
-           <div className={`${(answer==true && index==1)?'':"anewers"}`} >A : THERE ARE 6969 UNIQUE EVIL APES</div>
+           <div className={`${(answer==true && index==1)?'':"anewers"}`}  data-aos="fade-down">A : THERE ARE 6969 UNIQUE EVIL APES</div>
            
            <div onClick={()=>{questiClick(2)}}>Q : HOW MUCH IS IT TO MINT?</div>
            <div className={`${(answer==true && index==2)?'':"anewers"}`}>A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.65 ETH PUBLIC SALE IS 0.7 ETH ?</div>
