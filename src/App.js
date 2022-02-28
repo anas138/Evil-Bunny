@@ -41,20 +41,20 @@ function App() {
           <span>Lorem ipsum is simply dummy text of printing and<br/>type setting industry </span>
           <div className="main-calender">
             <div className="calender">
-              <span>04</span>
-              <small>Days</small>
+              <span id="no">04</span>
+              <small id="te">Days</small>
             </div>
             <div className="calender">
-              <span>06</span>
-              <small>Hours</small>
+              <span id="no">06</span>
+              <small id="te">Hours</small>
             </div>
             <div className="calender">
-              <span>31</span>
-              <small>Minuts</small>
+              <span id="no">31</span>
+              <small id="te">Minuts</small>
             </div>
             <div className="calender">
-              <span>04</span>
-              <small>Seconds</small>
+              <span id="no">04</span>
+              <small id="te">Seconds</small>
             </div>
           </div>
           <button className="home-button">MINT EVIL  APE</button>
@@ -66,12 +66,12 @@ function App() {
    <div className="imagesWraper">
     <div className="images">
     
-          <img src="bunny.png"  style={{borderRadius:"10px", height:"300px" ,width:"400px",bottom:"100px"}}/>
-          <img src="bunn2.png"   style={{borderRadius:"10px" , height:"400px" ,width:"400px"}}/>
-          <img src="c.png"   style={{borderRadius:"10px" , height:"400px" ,width:"320px"}}/>
-          <img src="d.png"   style={{borderRadius:"10px" , height:"400px" ,width:"400px",bottom:"50px"}}/>
-          <img src="e.png"   style={{borderRadius:"10px"  , height:"300px" ,width:"400px", bottom:"50px"}}/>
-          <img src="f.png"    style={{borderRadius:"10px" , height:"350px" ,width:"320px",bottom:"50px"}}/>
+          <img src="1.png"  style={{borderRadius:"10px", height:"250px" ,width:"400px",bottom:"150px"}}/>
+          <img src="2.png"   style={{borderRadius:"10px" , height:"400px" ,width:"400px"}}/>
+          <img src="3.png"   style={{borderRadius:"10px" , height:"400px" ,width:"320px"}}/>
+          <img src="4.png"   style={{borderRadius:"10px" , height:"400px" ,width:"400px",bottom:"50px"}}/>
+          <img src="5.png"   style={{borderRadius:"10px"  , height:"300px" ,width:"400px", bottom:"50px"}}/>
+          <img src="6.png"    style={{borderRadius:"10px" , height:"350px" ,width:"320px",bottom:"50px"}}/>
           {/* <img src="g.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
           <img src="h.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
           <img src="bunny.png"  style={{borderRadius:"10px" , height:"300px" ,width:"500px",bottom:"100px"}}/>
@@ -203,12 +203,11 @@ function App() {
 
 
       <div className="FAQ" id="faq">
-        <div>
-        </div>
+        
         <div className="faq-text">
            <h1>FAQ</h1>
            
-           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL<br/>  APE CLUB COLLECTION? {index==1 && answer==true?<FaSortUp/>:<FaSortDown/>} </div>
+           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL<br/>  APE CLUB COLLECTION? {index==1 && answer==true?     <FaSortUp />: <FaSortDown /> }</div> 
            <div className={`${(answer==true && index==1)?'answerVisible':"anewers"}`}  data-aos="fade-down"   data-aos-easing="ease-in-sine">A : THERE ARE 6969 UNIQUE EVIL APES</div>
            
            <div onClick={()=>{questiClick(2)}} >Q : HOW MUCH IS IT TO MINT? {index==2 && answer==true?<FaSortUp/>:<FaSortDown/>}</div>
