@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from "react"
 import './App.css';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord,FaSortDown } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { height } from "@mui/system";
@@ -21,7 +21,7 @@ function App() {
     
     <div className="App">
       <div className="wrapper"> 
-      <div className="header" height="100" width="100">
+      <div className="header" >
         <img src="logo.png" className="headerlogo"/>
         <a href="#home">HOME</a>
         <a href="#roadMap">ROAD MAP</a>
@@ -35,26 +35,26 @@ function App() {
 
       <div className="home" id="home">
         <div className="home-sub-text">
-        <h2>WELCOME TO<br/>
+        <h2> <span style={{fontSize:"30px"}}>WELCOME TO </span>     <br/>
           <span className="colored">THE <span className="evil-text">EVIL APE</span></span> <br/>
-          CLUB</h2>
+          <span style={{fontSize:"50px"}}>CLUB.</span></h2>
           <span>Lorem ipsum is simply dummy text of printing and<br/>type setting industry </span>
           <div className="main-calender">
             <div className="calender">
               <span>04</span>
-              <small>days</small>
+              <small>Days</small>
+            </div>
+            <div className="calender">
+              <span>06</span>
+              <small>Hours</small>
+            </div>
+            <div className="calender">
+              <span>31</span>
+              <small>Minuts</small>
             </div>
             <div className="calender">
               <span>04</span>
-              <small>days</small>
-            </div>
-            <div className="calender">
-              <span>04</span>
-              <small>days</small>
-            </div>
-            <div className="calender">
-              <span>04</span>
-              <small>days</small>
+              <small>Seconds</small>
             </div>
           </div>
           <button className="home-button">MINT EVIL APE</button>
@@ -66,16 +66,16 @@ function App() {
    <div className="imagesWraper">
     <div className="images">
     
-          <img src="a.png"  style={{borderRadius:"10px", height:"200px" ,width:"300px",bottom:"100px"}}/>
-          <img src="b.png"   style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
-          <img src="c.png"   style={{borderRadius:"10px" , height:"300px" ,width:"280px"}}/>
-          <img src="d.png"   style={{borderRadius:"10px" , height:"300px" ,width:"280px"}}/>
-          <img src="e.png"   style={{borderRadius:"10px"  , height:"300px" ,width:"282px",bottom:"100px"}}/>
-          <img src="f.png"    style={{borderRadius:"10px" , height:"300px" ,width:"282px",bottom:"100px"}}/>
-          <img src="g.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
+          <img src="bunny.png"  style={{borderRadius:"10px", height:"300px" ,width:"400px",bottom:"100px"}}/>
+          <img src="bunn2.png"   style={{borderRadius:"10px" , height:"400px" ,width:"400px"}}/>
+          <img src="c.png"   style={{borderRadius:"10px" , height:"400px" ,width:"320px"}}/>
+          <img src="d.png"   style={{borderRadius:"10px" , height:"400px" ,width:"400px",bottom:"50px"}}/>
+          <img src="e.png"   style={{borderRadius:"10px"  , height:"300px" ,width:"400px", bottom:"50px"}}/>
+          <img src="f.png"    style={{borderRadius:"10px" , height:"350px" ,width:"320px",bottom:"50px"}}/>
+          {/* <img src="g.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
           <img src="h.png"    style={{borderRadius:"10px" , height:"200px" ,width:"300px",bottom:"100px"}}/>
           <img src="bunny.png"  style={{borderRadius:"10px" , height:"300px" ,width:"500px",bottom:"100px"}}/>
-          <img src="bunn2.png"  style={{borderRadius:"10px" , height:"300px" ,width:"500px",bottom:"100px"}}/>
+          <img src="bunn2.png"  style={{borderRadius:"10px" , height:"300px" ,width:"500px",bottom:"100px"}}/> */}
           
           
           {/* {images.map((img,i)=>{
@@ -208,24 +208,24 @@ function App() {
         <div className="faq-text">
            <h1>FAQ</h1>
            
-           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL<br/>  APE CLUB COLLECTION?</div>
+           <div onClick={()=>{questiClick(1)}}>Q : WHAT IS THE TOTALAMOUNT OF NFTS IN THE EVIL<br/>  APE CLUB COLLECTION? <FaSortDown/> </div>
            <div className={`${(answer==true && index==1)?'':"anewers"}`} >A : THERE ARE 6969 UNIQUE EVIL APES</div>
-
+           
            <div onClick={()=>{questiClick(2)}}>Q : HOW MUCH IS IT TO MINT?</div>
-           <div className={`${(answer==true && index==2)?'':"anewers"}`}>A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.65 ETH PUBLIC SALE IS 0.7 ETH</div>
+           <div className={`${(answer==true && index==2)?'':"anewers"}`}>A : OUR WHITELIST PRESALE MINT PRICE IS <br/> 0.65 ETH PUBLIC SALE IS 0.7 ETH ?</div>
 
            <div id="bottom-red">12/02/2022 7pm EST</div>
 
-           <div onClick={()=>{questiClick(3)}}>Q : HOW MUCH WILL EACH EVIL APP COST TO MINT?</div>
+           <div onClick={()=>{questiClick(3)}}>Q : HOW MUCH WILL EACH EVIL APP COST TO MINT ?</div>
            <div className={`${(answer==true && index==3)?'':"anewers"}`}> A : Our Whitelist presale mint starts <br/> March 12, 2022 at 12:00 noon EST and last <br/>for 24 hours. Our public sale <br/>starts the following<br/> day March 13, 2022 at 12:00 noon EST.</div>
-
-           <div onClick={()=>{questiClick(4)}}>Q : Where can I view my Evil Ape Club NFT?</div>
+           
+           <div onClick={()=>{questiClick(4)}}>Q : Where can I view my Evil Ape Club NFT </div>
            <div  className={`${(answer==true && index==4)?'':"anewers"}`}>A : After a successful mint, <br/>you can view your Rebel Tiger on OpenSea.<br/> by connecting your wallet.</div>
 
-           <div onClick={()=>{questiClick(5)}}>Q : Where can I view my Evil Ape Club NFT?</div>
+           <div onClick={()=>{questiClick(5)}}>Q : Where can I view my Evil Ape Club NFT ?</div>
            <div className={`${(answer==true && index==5)?'':"anewers"}`}>A : WHAT IS THE EVIL APE</div>
 
-           <div onClick={()=>{questiClick(6)}}>Q : What Blockchain?</div>
+           <div onClick={()=>{questiClick(6)}}>Q : What Blockchain ?</div>
            <div className={`${(answer==true && index==6)?'':"anewers"}`}>A : ETH Blockchain</div>
         </div>
       </div>
